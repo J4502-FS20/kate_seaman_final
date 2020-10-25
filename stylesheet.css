@@ -2,7 +2,7 @@
 
 body {
   background-color: #FFFFFF;
-
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
@@ -24,4 +24,15 @@ text-align: center;
 }
 p {
   font-family: 'Josefin Sans', sans-serif;
+}
+ul {
+  list-style: none;
+}
+li:before { content: "-" ;
+color: #c7dfc5;
+font-weight: bold;
+}
+
+li{
+  line-height: 1.5;
 }
