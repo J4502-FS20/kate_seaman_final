@@ -18,8 +18,10 @@ nav a {
   background: #c1dbe3;
   color: white;
 }
-
 h1 {
 font-family: 'Coming Soon', cursive;
-
+text-align: center;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
 }
