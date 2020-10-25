@@ -3,5 +3,23 @@
 body {
   background-color: #FFFFFF;
 
+}
+
+nav {
+  text-align: left;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+}
+nav a {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 3px;
+  background: #c1dbe3;
+  color: white;
+}
+
+h1 {
+font-family: 'Coming Soon', cursive;
 
 }
