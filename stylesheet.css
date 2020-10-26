@@ -19,10 +19,10 @@ nav {
 nav a {
   display: inline-block;
   padding: 15px;
-  border-radius: 5px;
   color: white;
   text-decoration: none;
   font-size: 20px;
+  border-radius: 4px;
 }
 
 header {
@@ -31,11 +31,11 @@ header {
   background: #c1dbe3;
   color: white;
   font-size: 30px;
-  margin: -15px;
+  margin: -12px;
     }
 
 nav a:hover {
-  background-color: #111;
+  background-color: #F1AB86;
 }
 
 h1 {
@@ -72,7 +72,7 @@ ul {
   margin-right: 70px;
 }
 li:before { content: "-" ;
-color: #c7dfc5;
+color: #C57B57;
 font-weight: bold;
 }
 li{
