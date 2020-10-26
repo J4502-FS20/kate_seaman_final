@@ -10,21 +10,31 @@ nav {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
+    background: #c1dbe3;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 nav a {
   display: inline-block;
-  padding: 6px;
-  border-radius: 3px;
-  background: #c1dbe3;
+  padding: 10px;
+  border-radius: 5px;
   color: white;
   text-decoration: none;
+  font-size: 20px;
 }
-h1{font-family: 'Cedarville Cursive', cursive;
+nav a:hover {
+  background-color: #111;
+}
+h1 {
+font-family: 'Cedarville Cursive', cursive;
 text-align: center;
-font-size: 40px;
+font-size: 50px;
 margin-bottom: -5px;
-text-decoration: none;
+}
+h1 a {
 color: black;
+text-decoration: none;
 }
 h2, h3, h4 {
 font-family: 'Coming Soon', cursive;
@@ -32,6 +42,8 @@ text-align: center;
 }
 p {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
 }
 ul {
   list-style: none;
