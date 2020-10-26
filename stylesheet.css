@@ -68,8 +68,8 @@ p {
 }
 ul {
   list-style: none;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 li:before { content: "-" ;
 color: #C57B57;
@@ -78,3 +78,17 @@ font-weight: bold;
 li{
   line-height: 1.5;
 }
+
+img {margin: 40px;
+  width: 90%;
+}
+
+img (min-width: 400px) {
+    margin: 40px;
+    font-size: 1.5em;
+}
+
+img (min-width: 700px) {
+    margin: 40px;
+    font-size: 2em;
+  }
