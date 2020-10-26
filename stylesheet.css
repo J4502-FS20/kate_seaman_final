@@ -14,6 +14,7 @@ nav {
     background: #c1dbe3;
     margin-left: -15px;
     margin-right: -15px;
+    margin-bottom: -30px;
 }
 
 nav a {
@@ -26,12 +27,18 @@ nav a {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 30px;
   text-align: center;
   background: #c1dbe3;
   color: white;
   font-size: 30px;
-  margin: -12px;
+  margin-top: -12px;
+  margin-left: -12px;
+  margin-right: -12px;
     }
 
 nav a:hover {
@@ -41,12 +48,14 @@ nav a:hover {
 h1 {
 font-family: 'Cedarville Cursive', cursive;
 text-align: center;
-font-size: 65px;
+font-size: 60px;
 background: #c1dbe3;
 margin-bottom: -5px;
 margin-left: -15px;
 margin-right: -15px;
-margin-top: 15px;
+margin-top: -12px;
+width: 100%;
+margin-bottom: -15px;
 }
 
 h1 a {
@@ -58,6 +67,7 @@ h2, h3, h4 {
 font-family: 'Coming Soon', cursive;
 text-align: center;
 }
+
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
@@ -66,16 +76,19 @@ p {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 ul {
   list-style: none;
   margin-left: 100px;
   margin-right: 100px;
 }
+
 li:before { content: "-" ;
 color: #C57B57;
 font-weight: bold;
 }
-li{
+
+li {
   line-height: 1.5;
 }
 
@@ -91,4 +104,44 @@ img (min-width: 400px) {
 img (min-width: 700px) {
     margin: 40px;
     font-size: 2em;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 3000px;
+    min-height: 400px;
+    justify-content: center;
+  }
+  .container.flex-start {
+    align-content: flex-start;
+  }
+  .item {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    padding: 10rem;
+    background: #F1AB86;
+    border: 5px solid #DD9787;
+    color: Black;
+    margin: 6px;
+  }
+  .item.item-2,
+  .item.item-8,
+  .item.item-9
+  .item.item-10{
+    padding: 5rem;
+  }
+  .item.item-3,
+  .item.item-7,
+  .item.item-15,
+  .item.item-12 {
+    padding: 2.5rem;
+  }
+  .item.item-4,
+  .item.item-6,
+  .item.item-14,
+  .item.item-11 {
+    padding: .5rem 2rem 3rem;
   }
