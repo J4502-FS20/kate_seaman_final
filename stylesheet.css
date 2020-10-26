@@ -4,8 +4,6 @@
 body {
   background-color: #FFFFFF;
   font-family: 'Josefin Sans', sans-serif;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 nav {
@@ -14,19 +12,27 @@ nav {
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     background: #c1dbe3;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 nav a {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
+
+header {
+  padding: 30px;
+  text-align: center;
+  background: #c1dbe3;
+  color: white;
+  font-size: 30px;
+  margin: -15px;
+    }
 
 nav a:hover {
   background-color: #111;
@@ -35,9 +41,12 @@ nav a:hover {
 h1 {
 font-family: 'Cedarville Cursive', cursive;
 text-align: center;
-font-size: 50px;
+font-size: 65px;
 background: #c1dbe3;
 margin-bottom: -5px;
+margin-left: -15px;
+margin-right: -15px;
+margin-top: 15px;
 }
 
 h1 a {
@@ -54,9 +63,13 @@ p {
   font-size: 17px;
   text-align: center;
   line-height: 1.5;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 ul {
   list-style: none;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 li:before { content: "-" ;
 color: #c7dfc5;
