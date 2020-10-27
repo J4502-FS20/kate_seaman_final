@@ -83,6 +83,7 @@ ul {
   list-style: none;
   margin-left: 100px;
   margin-right: 100px;
+  line-height: 2;
 }
 
 li:before { content: "-" ;
@@ -91,7 +92,7 @@ font-weight: bold;
 }
 
 li {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 img {margin: 40px;
@@ -147,3 +148,12 @@ img (min-width: 700px) {
   .item.item-11 {
     padding: .5rem 2rem 3rem;
   }
+
+.list{
+margin-left: -80px;
+}
+
+.rules {
+  text-align: center;
+  list-style-type: none;
+}
