@@ -1,170 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Coming+Soon&family=Homemade+Apple&family=Josefin+Sans:wght@300&display=swap');
-
-body {
-  background-color: #FFFFFF;
-  font-family: 'Josefin Sans', sans-serif;
+ body {
+     background-color: #FFFFFF;
+     font-family: 'Josefin Sans', sans-serif;
 }
-
-nav {
-  text-align: left;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
-    background: #c1dbe3;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: -30px;
+ nav {
+     text-align: left;
+     text-align: center;
+     font-family: 'Josefin Sans', sans-serif;
+     text-decoration: none;
+     background: #c1dbe3;
+     margin-left: -15px;
+     margin-right: -15px;
+     margin-bottom: -30px;
 }
-
-nav a {
-  display: inline-block;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 4px;
+ nav a {
+     display: inline-block;
+     padding: 20px;
+     color: #000000;
+     text-decoration: none;
+     font-size: 20px;
+     border-radius: 4px;
 }
-
-header {
-  padding: 30px;
-  text-align: center;
-  background: #c1dbe3;
-  color: white;
-  font-size: 30px;
-  margin-top: -12px;
-  margin-left: -12px;
-  margin-right: -12px;
+ header {
+     padding: 30px;
+     text-align: center;
+     background: #c1dbe3;
+     font-size: 30px;
+     margin-top: -12px;
+     margin-left: -12px;
+     margin-right: -12px;
+}
+ nav a:hover {
+     background-color: #F1AB86;
+}
+ h1 {
+     font-family: 'Homemade Apple', cursive;
+     text-align: center;
+     font-size: 50px;
+     background: #c1dbe3;
+     margin-left: -15px;
+     margin-right: -15px;
+     margin-top: -12px;
+     width: 100%;
+     margin-bottom: -15px;
+}
+ h1 a {
+     color: black;
+     text-decoration: none;
+}
+ h2, h4 {
+     font-family: 'Josefin Sans', sans-serif;
+     text-align: center;
+     font-size: 25px;
+}
+h3 {
+ color: black;
+ font-family: 'Homemade Apple', cursive;
+ text-align: center;
+ font-size: 35px;
+ line-height: .5;
+}
+ p {
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 17px;
+     text-align: left;
+     line-height: 1.5;
+     margin: auto;
+     width: 65%;
+}
+ ul {
+     list-style: none;
+     margin-left: 100px;
+     margin-right: 100px;
+     line-height: 2;
+     margin: auto;
+     width: 65%;
+}
+ li:before {
+     content: "-" ;
+     color: #C57B57;
+     font-weight: bold;
+}
+ li {
+     line-height: 2;
+}
+ img {
+     margin: 40px;
+     width: 80%;
+}
+ @media screen and (min-width: 400px) {
+     img {
+         margin: 1.5em;
     }
-
-nav a:hover {
-  background-color: #F1AB86;
 }
-
-h1 {
-font-family: 'Homemade Apple', cursive;
-text-align: center;
-font-size: 50px;
-background: #c1dbe3;
-margin-left: -15px;
-margin-right: -15px;
-margin-top: -12px;
-width: 100%;
-margin-bottom: -15px;
+ @media screen and (min-width: 700px) {
+     img {
+         margin: 2em;
+    }
 }
-
-h1 a {
-color: black;
-text-decoration: none;
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     max-width: 3000px;
+     min-height: 400px;
+     justify-content: center;
 }
-
-h2, h3, h4 {
-font-family: 'Josefin Sans', sans-serif;
-text-align: center;
-font-size: 30px;
+ .container.flex-start {
+     align-content: flex-start;
 }
-
-p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 17px;
-  text-align: left;
-  line-height: 1.5;
-  margin: auto;
-  width: 65%;
+ .item {
+     font-size: 2rem;
+     line-height: 1;
+     text-align: center;
+     padding: 10rem;
+     background: #F1AB86;
+     border: 5px solid #DD9787;
+     color: Black;
+     margin: 6px;
 }
-
-ul {
-  list-style: none;
-  margin-left: 100px;
-  margin-right: 100px;
-  line-height: 2;
-  margin: auto;
-  width: 65%;
+ .item.item-2, .item.item-8, .item.item-9 .item.item-10{
+     padding: 5rem;
 }
-
-li:before { content: "-" ;
-color: #C57B57;
-font-weight: bold;
+ .item.item-3, .item.item-7, .item.item-15, .item.item-12 {
+     padding: 2.5rem;
 }
-
-li {
-  line-height: 2;
+ .item.item-4, .item.item-6, .item.item-14, .item.item-11 {
+     padding: .5rem 2rem 3rem;
 }
-
-img {margin: 40px;
-  width: 80%;
+ .list{
+     margin: auto;
+     width: 90%;
 }
-
-img (min-width: 400px) {
-    margin: 40px;
-    font-size: 1.5em;
+ .rules {
+     text-align: center;
+     list-style-type: none;
+     font-size: 23px;
+     font-weight: 600;
 }
-
-img (min-width: 700px) {
-    margin: 40px;
-    font-size: 2em;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 3000px;
-    min-height: 400px;
-    justify-content: center;
-  }
-  .container.flex-start {
-    align-content: flex-start;
-  }
-  .item {
-    font-size: 2rem;
-    line-height: 1;
-    text-align: center;
-    padding: 10rem;
-    background: #F1AB86;
-    border: 5px solid #DD9787;
-    color: Black;
-    margin: 6px;
-  }
-  .item.item-2,
-  .item.item-8,
-  .item.item-9
-  .item.item-10{
-    padding: 5rem;
-  }
-  .item.item-3,
-  .item.item-7,
-  .item.item-15,
-  .item.item-12 {
-    padding: 2.5rem;
-  }
-  .item.item-4,
-  .item.item-6,
-  .item.item-14,
-  .item.item-11 {
-    padding: .5rem 2rem 3rem;
-  }
-
-.list{
-margin: auto;
-width: 90%;
+ .about_the_project {
+     font-size: 40px;
+     text-align: center;
+     margin-top: 15px;
 }
-
-.rules {
-  text-align: center;
-  list-style-type: none;
-  font-size: 23px;
-  font-weight: 600;
+ .dress {
+     font-style: italic;
 }
-.about_the_project {
-font-size: 40px;
-text-align: center;
-margin-top: 15px;
-}
-
-.dress {
-font-style: italic;
-}
-
-hr {
-width: 45%;
+ hr {
+     width: 45%;
 }
