@@ -88,15 +88,18 @@ h3 {
      margin: 40px;
      width: 80%;
 }
- @media screen and (min-width: 400px) {
+ @media screen and (min-width: 700px) {
      img {
          margin: 1.5em;
     }
-}
- @media screen and (min-width: 700px) {
-     img {
-         margin: 2em;
+    h1 {
+font-size: 50px;
     }
+}
+@media screen and (min-width: 500px) {
+  h1{
+font-size: 25px;
+  }
 }
  .container {
      display: flex;
@@ -148,4 +151,14 @@ h3 {
 }
  hr {
      width: 45%;
+}
+.buggy {
+  flex: 33.33%;
+  padding: 5px;
+}
+.pictures{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
