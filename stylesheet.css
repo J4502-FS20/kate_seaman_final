@@ -62,8 +62,9 @@ h3 {
  color: black;
  font-family: 'Homemade Apple', cursive;
  text-align: center;
- font-size: 35px;
+ font-size: 33px;
  line-height: .5;
+ padding-top: 10px;
 }
 footer {
   background-color: #c1dbe3;
@@ -80,22 +81,26 @@ p {
      margin-bottom: 15px;
      padding-left: 10%;
      padding-right: 10%;
-   }
- ul {
+}
+a {
+  text-decoration: none;
+  color: #80727B;
+}
+ul {
      list-style: none;
      list-style-position: inside;
      padding-left: 40px;
      line-height: 2;
      margin: auto;
      width: 65%;}
- li:before {
+li:before {
      content: "-" ;
      color: #C57B57;
      font-weight: bold;}
- li {
+li {
      line-height: 2;
      font-size: 17px;}
- img {
+img {
      margin: 40px;
      width: 80%;}
 .bottom_nav a{
@@ -189,6 +194,27 @@ padding-right: 70px;
   background: #125688;
   color: white;
 }
+.map {
+   overflow: hidden;
+   padding-bottom: 50%;
+   position: relative;
+   height: 0;
+   padding-right: 40px;
+   padding-left: 40px;
+}
+iframe{
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    position: static;
+  }
+.right {
+    float: right;
+    max-width: 60%;
+    border-radius: 15px 15px;
+  }
+
 
 /** Gallery **/
 
@@ -296,4 +322,9 @@ img.hover-shadow {
    }
    h1 {
      font-size: 50px; }
+}
+@media only screen and (max-width: 701px) {
+  h3 {
+      font-size: 20px;
+    }
 }
