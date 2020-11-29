@@ -22,14 +22,14 @@ nav {
      margin-bottom: -30px;
     }
 nav a {
-     padding: 20px;
+     padding: 15px;
      color: #000000;
      text-decoration: none;
      font-size: 20px;
      border-radius: 4px;
      display: inline-flex;
      flex-wrap: wrap;
-     justify-content: center;
+     justify-content: space-between;
    }
 header {
      padding: 30px;
@@ -72,15 +72,13 @@ footer {
 	text-align: center;
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 p {
      font-family: 'Josefin Sans', sans-serif;
      line-height: 1.5;
      margin-bottom: 15px;
-     padding-left: 10%;
-     padding-right: 10%;
 }
 a {
   text-decoration: none;
@@ -89,10 +87,11 @@ a {
 ul {
      list-style: none;
      list-style-position: inside;
-     padding-left: 40px;
+     padding-left: 7vh;
      line-height: 2;
      margin: auto;
-     width: 65%;}
+     width: 65%;
+  }
 li:before {
      content: "-" ;
      color: #C57B57;
@@ -101,14 +100,29 @@ li {
      line-height: 2;
      font-size: 17px;}
 img {
-     margin: 40px;
-     width: 80%;}
+    max-width: 100%;
+  }
+.length {
+  width: 100%;
+  padding-right: 0vh;
+  padding-left: 45px;
+}
+.photos {
+    float: left;
+    width: 31%;
+    padding: 10px;
+}
+.length::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .bottom_nav a{
   text-align: center;
   background: #c1dbe3;
 	line-height: 1.8;
 	text-decoration: none;
-	color:  black;
+	color: black;
   padding-right: 25px;
 }
 .bottom_nav{
@@ -123,7 +137,8 @@ img {
   text-align: right;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 30px;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
   background: #c1dbe3;
 }
 .Copyright{
@@ -132,35 +147,40 @@ img {
 }
 .list{
      margin: auto;
-     width: 90%;}
+     width: 90%;
+     padding-left: 5%;
+     padding-right: 5%;}
 .rules {
      text-align: center;
      list-style-type: none;
      font-size: 23px;
      font-weight: 600;
-     padding-bottom: 35px;
-   }
+     padding-bottom: 15px;
+     padding-top: 15px;
+}
 .about_the_project { 
   display: block;
   padding: 20px; 
   text-align: left; 
-  max-width: 700px; 
-  margin: auto; 
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .dress {
      font-style: italic;}
 hr {
-     width: 45%;}
+     width: 45%;
+   }
 .ordnung {
-font-size: 17px;
-padding-left: 70px;
-padding-right: 70px;
+  font-size: 17px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .biblequote {
-font-size: 20px;
-text-align: center;
-padding-left: 70px;
-padding-right: 70px;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .fa {padding: 15px;
   font-size: 20px;
@@ -209,11 +229,104 @@ iframe{
     width: 100%;
     position: static;
   }
+.container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+}
 .right {
-    float: right;
-    max-width: 60%;
-    border-radius: 15px 15px;
-  }
+  float: right;
+  margin: 0 0 0 15px;
+  width: 150%;
+}
+.text {
+    font-size: 17px;
+    vertical-align: bottom;
+    padding-left: 10%;
+}
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  text-align: center;
+}
+figcaption {
+  display: inline-flex;
+  flex-direction: row;
+  margin: auto;
+  line-height: 1.5em;
+  align-items: center;
+}
+.description {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption    {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption    {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 /** Gallery **/
@@ -323,8 +436,20 @@ img.hover-shadow {
    h1 {
      font-size: 50px; }
 }
-@media only screen and (max-width: 701px) {
+@media only screen and (max-width: 799px) {
   h3 {
       font-size: 20px;
-    }
+  }
+  nav a {
+      font-size: 15px;
+  }
+  .photos {
+    width: 100%;
+  }
+  .right {
+    width: 4000px;
+  }
+  .modal-content {
+    width: 100%;
+  }
 }
