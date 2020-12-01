@@ -4,7 +4,6 @@ body {
      font-family: 'Josefin Sans', sans-serif;
      margin: 0;
      -ms-overflow-style: none;
-     scrollbar-width: none;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -99,6 +98,13 @@ li:before {
 li {
      line-height: 2;
      font-size: 17px;}
+.right {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 125%;
+    padding-right: 63px;
+  }
+
 img {
     max-width: 100%;
   }
@@ -233,11 +239,6 @@ iframe{
       display: flex;
       align-items: center;
       justify-content: center
-}
-.right {
-  float: right;
-  margin: 0 0 0 15px;
-  width: 150%;
 }
 .text {
     font-size: 17px;
