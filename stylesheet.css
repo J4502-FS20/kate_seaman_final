@@ -265,7 +265,6 @@ figcaption {
 
 /** Infographic **/
 .anabaptist_holder {
-  display: block;
   width: 100%;
   max-width: 800px;
   background: #c1dbe3;
