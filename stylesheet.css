@@ -231,14 +231,13 @@ hr {
 iframe{
     left: 0;
     top: 0;
-    height: 80%;
     width: 100%;
     position: static;
   }
 .container {
-      display: flex;
+      display: inline-block;
       align-items: center;
-      justify-content: center
+      justify-content: center;
 }
 .text {
     font-size: 17px;
@@ -265,6 +264,7 @@ figcaption {
 
 /** Infographic **/
 .anabaptist_holder {
+  margin-left: 45px;
   width: 100%;
   max-width: 800px;
   background: #c1dbe3;
@@ -300,6 +300,7 @@ figcaption {
   font-size: 40px;
   margin-top: .5rem;
   margin-bottom: 1rem;
+  margin-left: auto;
 }
 
 .anabaptist_holder h2 {
@@ -307,7 +308,7 @@ figcaption {
     font-family: 'Josefin Sans', sans-serif;
     width: 80%;
     font-size: 20px;
-    margin: .5rem;
+    margin: auto;
     padding: 1.25rem;
     padding-left: 2rem;
 }
