@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Ex-Amish in Mid-Missouri</title>
+<title>Good Ol' Boys</title>
 <meta name="description" content="Ex-Amish Life in Mid-Missouri">
 <meta name="author" content="Kate Seaman">
 <meta name="keywords" content="Kate Seaman, J4502, J7502, Assignment, Amish, Final, fun, Missouri, Clark"/>
@@ -16,7 +16,7 @@
 
 <body>
   <header>
-  <h1><a href= "index.html">Ex-Amish in Mid-Missouri</a></h1>
+  <h1><a href= "index.html">Good Ol' Boys</a></h1>
   <nav>
     <a href="index.html">Images</a>
     <a href="index3.html">Ordnung</a>
@@ -109,18 +109,59 @@
 <figure>
   <div class="length">
     <div class="photos">
-      <img src="Buggy.jpg" alt="A buggy drives through the Clark Amish Community"><figcaption> A buggy drives through the Clark Amish Community in the middle of the summer in 2020. </figcaption>
+      <img src="Buggy.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="A buggy drives through the Clark Amish Community">
     </div>
  
     <div class="photos">
-      <img src= "Jerry_Letter.jpg" alt="A letter from Buster's Brother"><figcaption> An exerpt from the first letter Buster received from his brother Jerry since he left home. </figcaption>
+      <img src= "Jerry_Letter.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="A letter from Buster's Brother">
     </div>
 
     <div class="photos">
-      <img src="11152020_ExAmish_KS_007.jpg" alt="Horse and Buggy Cutout"><figcaption> A wood cut-out of a horse and buggy sits on the front porch of Buster's house while Lulu's bottle of Fireball liquor remains after a night of partying. </figcaption>
+      <img src="11152020_ExAmish_KS_007.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Horse and Buggy Cutout">
     </div>
   </div>
 </figure>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="Buggy.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="Jerry_Letter.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="11152020_ExAmish_KS_007.jpg" style="width:100%">
+    </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+<div class="column">
+          <img class="demo" src="Buggy.jpg" onclick="currentSlide(1)" alt="A buggy drives through the Clark Amish Community in the middle of the summer in 2020.">
+      </div>
+
+        <div class="column">
+          <img class="demo" src="Jerry_Letter.jpg" onclick="currentSlide(2)" alt="An exerpt from the first letter Buster received from his brother Jerry since he left home.">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="11152020_ExAmish_KS_007.jpg" onclick="currentSlide(3)" alt="A wood cut-out of a horse and buggy sits on the front porch of Buster's house while Lulu's bottle of Fireball liquor remains after a night of partying.">
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="Copyright">

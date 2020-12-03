@@ -176,6 +176,7 @@ img {
      font-style: italic;}
 hr {
      width: 45%;
+     color: black;
    }
 .ordnung {
   font-size: 17px;
@@ -250,13 +251,7 @@ figure {
   font-size: 12px;
   text-align: center;
 }
-figcaption {
-  display: inline-flex;
-  flex-direction: row;
-  margin: auto;
-  line-height: 1.5em;
-  align-items: center;
-}
+
 .description {
     padding-left: 10%;
     padding-right: 10%;
@@ -328,27 +323,28 @@ figcaption {
   cursor: pointer;
 }
 
-
 /** Gallery **/
 
 .row > .column {
-  padding: 0 8px;
+  padding: 0;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 .column {
-  float: left;
+  float:left;
   width: 25%;
+  margin-top: -90px;
+  height: 10%;
+  margin-bottom: 100px;
 }
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -357,11 +353,10 @@ figcaption {
   background-color: black;
 }
 .modal-content {
-  position: relative;
-  background-color: #fefefe;
+  position: static;
   margin: auto;
-  padding: 0;
-  width: 90%;
+  padding: 15px;
+  width: 60%;
   max-width: 1200px;
 }
 .close {
@@ -378,10 +373,11 @@ figcaption {
   cursor: pointer;
 }
 .mySlides {
-  display: none;}
+  display: none;
+}
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 50%;
   width: auto;
   padding: 16px;
@@ -390,7 +386,7 @@ figcaption {
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -407,12 +403,12 @@ figcaption {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 15;
 }
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 2px 16px;
+  padding: 2px;
   color: white;
 }
 img.demo {
